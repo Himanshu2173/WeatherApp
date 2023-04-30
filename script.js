@@ -56,6 +56,7 @@ async function getWeather(city) {
 }
 // getWeather();
 submit.addEventListener("click", (e) => {
+  e.preventDefault();
   button_clicked = true;
   getWeather(city.value);
 });
